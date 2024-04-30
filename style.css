@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    width: 60%;
+}
+.phones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.slides{
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+}
+.slides2{
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+    animation-delay: 5s;
+}
+.slides3{
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+    animation-delay: 10s;
+}
+.slides4{
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+    animation-delay: 15s;
+}
+/*.slides:nth-child(1){
+
+}
+.slides:nth-child(2){
+    animation-delay: 5;
+}
+.slides:nth-child(3){
+    animation-delay: 10;
+}
+.slides:nth-child(4){
+    animation-delay: 10;
+}*/
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+     
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.phones img{
+    height: 40rem;
+    
+}
+
+.login{
+    display: flex;
+    align-items: center; /*horizontal */
+    justify-content: space-around; /*vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.blocks{
+    display: flex;
+    justify-content: space-between; /*vertical */
+    align-items: center; /*horizontal */
+    flex-direction: column;
+    background-color: white;
+    width: 85%;
+    padding: 10% 0;
+    border: 1px solid #dbdbdb;
+    margin: 0 0 10px;
+}
+.blocks:nth-child(1){
+    min-width: 20rem;
+    min-height: 13rem;
+}
+
+.logo_artstagram{
+    height: 3rem;
+}
+
+.profile_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 18px 18px;
+}
+.profile_photo img{
+    height: 6rem;
+}
+
+.continuar{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.link{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not_account{
+    color: #8e8e8e;
+    margin-bottom: 0.5rem;
+}
+.links{
+    color: #0095f6;
+}
+.lojas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.getApp{
+    height: 3.07rem;
+    width: 10.5rem;
+    background-size: cover;
+    
+}
+;.getApp img{
+    image-rendering:auto;
+}
+.getApp:nth-child(1){
+    background-image: url(App_Store.png);
+    margin-right: 10px;
+}
+.getApp:nth-child(2){
+    background-image: url(Google_Store.png);
+}
+
+/* media queries */
+
+@media (max-width: 1024px){
+    .page{
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    .page{
+        width: 90%;
+    }
+    .phones{
+        display: none;
+    }
+    .login{
+        width: 100%;
+    }
+
+}
+@media (max-width: 500px){
+    .blocks{
+        background:transparent;
+        border: none;
+    }
+}
